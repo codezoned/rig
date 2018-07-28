@@ -30,6 +30,6 @@ This project is heavily inspired from FOSSASIA's [Badgeyay](https://github.com/f
 
   
 
-**Contributions** will be opened once the project reaches a less alpha project :wink:
+**Contributions** will be opened once the project reaches a less alpha stage :wink:
 
 
