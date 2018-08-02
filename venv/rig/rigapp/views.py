@@ -3,7 +3,7 @@ from django.http import HttpResponse
 import subprocess
 import os
 import sys
-path=os.path.abspath(r"C:\Users\senthil\Documents\GitHub\rig\venv\rig\rigapp\id.py")
+path=os.path.abspath(r"path to id.py")
 
 
 def index(request):
@@ -19,4 +19,4 @@ def submit(request):
     a=request.POST['a']
     b=request.POST['b']
     print("what the f")
-    subprocess.call([sys.executable,path, a], cwd=r"C:\Users\senthil\Documents\GitHub\rig\venv\rig\rigapp")
+    subprocess.call([sys.executable,path, a,b], cwd=r"path to working directory = rigapp")
