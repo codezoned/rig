@@ -7,7 +7,9 @@
 <body>
 	<b> PRE PRE PRE ALPHA. STAY AWAY.</b>
 <br><br>
-	<form >
+	<form action="submit" method="post" >
+ {% csrf_token %}
+
   A field :<br>
   <input type="text" name="a"><br><br><br>
   A less useful field:<br>
