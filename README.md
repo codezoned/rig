@@ -13,7 +13,17 @@
 This project is heavily inspired from FOSSASIA's [Badgeyay](https://github.com/fossasia/badgeyay). Check em out :grinning:
 
 ## Development(for the brave)
+- Navigate to the specified directory and add path for the background image
 
+ ```
+ rig\venv\rig\rigapp\id.py
+ ```
+
+- Similarly do the same in views.py. Add path,fpath and cwd.
+
+ ```
+ rig\venv\rig\rigapp\views.py
+ ```
 - Open up your cmd in the project folder (rig)
 
 - cd to the specified directory
@@ -22,7 +32,7 @@ This project is heavily inspired from FOSSASIA's [Badgeyay](https://github.com/f
   rig\venv\rig
   ```
 
-  
+
 
 - Run
 
@@ -30,12 +40,11 @@ This project is heavily inspired from FOSSASIA's [Badgeyay](https://github.com/f
   manage.py runserver
   ```
 
-  
+- Open the webpage in your browser ,fill in your details and your file should automatically download as Badge.pdf
+
 
   ## Contributions
 
   
 
 **Contributions** will be opened once the project reaches a less alpha stage :wink:
-
-
