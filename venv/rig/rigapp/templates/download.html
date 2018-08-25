@@ -7,11 +7,15 @@
 <body>
 	<b> HI! This is the download page for your badge</b>
 <br><br>
-<a href="file://F:/New_folder/rig3/venv/rig/rigapp/Badge.pdf" download="badge">DOWNLOAD BADGE</a>
-<a href="file://F:\New_folder\rig3\venv\rig\rigapp\1.jpeg" download>TEST</a>
+{% load static %}
+<img src="{% static "qr.png" %}" alt="My Badge" height=500 width=500/>
+<form action="download" method="post" >
+{% csrf_token %}
+<input type = "submit" value="download as pdf">
+
+
 </body>
 <br>
 <br>
-<a href="F:\New folder\rig3\venv\rig\rigapp\templates\1.jpeg" don>Download!</a>
 
 </html>

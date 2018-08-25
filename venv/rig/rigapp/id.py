@@ -1,3 +1,4 @@
+
 from PIL import Image
 from PIL import ImageFont
 from PIL import ImageDraw
@@ -42,6 +43,6 @@ pdf.image(image,x=110,y=0,w=100,h=100)
 pdf.image(image,x=110,y=110,w=100,h=100)
 pdf.image(image,x=0,y=110,w=100,h=100)
 os.remove("img.png")
-shutil.copyfile('qr.png', './static/qr.png')  
+shutil.copyfile('qr.png', './static/qr.png')
 
 pdf.output('Badge.pdf')
