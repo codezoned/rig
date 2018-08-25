@@ -2,6 +2,8 @@ from PIL import Image
 from PIL import ImageFont
 from PIL import ImageDraw
 import os
+import shutil
+
 import qrcode as qr
 import sys
 from fpdf import FPDF
@@ -9,7 +11,7 @@ images=[]
 name=sys.argv[1]
 event_name=sys.argv[2]
 course=sys.argv[2]
-path=os.path.abspath(r"path to imgbackground")
+path=os.path.abspath(r"F:\New folder\codezoned\rig\venv\rig\rigapp\img.png")
 
 def PlaceText():
     img = Image.open(path)
@@ -39,6 +41,7 @@ pdf.image(image,x=0,y=0,w=100,h=100)
 pdf.image(image,x=110,y=0,w=100,h=100)
 pdf.image(image,x=110,y=110,w=100,h=100)
 pdf.image(image,x=0,y=110,w=100,h=100)
-
+os.remove("img.png")
+shutil.copyfile('qr.png', './static/qr.png')  
 
 pdf.output('Badge.pdf')
