@@ -2,6 +2,8 @@
 
 **VERY VERY VERY ALPHA. STAY AWAY FROM PRODUCTION** :sob:
 
+[![Open Source Helpers](https://www.codetriage.com/codezoned/rig/badges/users.svg)](https://www.codetriage.com/codezoned/rig)
+
 > RIG is an app to generate IDs and badges for any event or meetup!
 
 > **This is one of the first projects of codezoned, Show your :heart:**

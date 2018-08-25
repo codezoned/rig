@@ -6,6 +6,7 @@ from django.core.files.storage import FileSystemStorage
 import subprocess
 import os
 import sys
+from .models import Badge
 path=os.path.abspath(r"F:\New folder\codezoned\rig\venv\rig\rigapp\id.py")
 fpath=os.path.abspath(r"F:\New folder\codezoned\rig\venv\rig\rigapp\Badge.pdf")
 from django.core.files.storage import FileSystemStorage
@@ -44,10 +45,4 @@ def down(request):
 
 
 
-def upload(request):
-    print("IS THIS WORKING")
-    folder=os.path.abspath(r"F:\New folder\codezoned\rig\venv\rig\rigapp" )
-    if request.method == 'POST':
-       myf = request.FILES['myfile']
-       fs = FileSystemStorage(location=folder)
-       filename = fs.save('img.png', myf)
+
