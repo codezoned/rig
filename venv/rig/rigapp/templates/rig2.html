@@ -45,14 +45,14 @@
 
   <div class="w3-row w3-padding-64">
     <div class="w3-twothird w3-container">
-     <form action="submit" accept="image/gif, image/jpeg" enctype="multipart/form-data" method="post"  >
+     <form action="submit"  enctype="multipart/form-data" method="post"  >
        {% csrf_token %}
-  First name:  <input type="text" name="fname"><br>
-  Last name:   <input type="text" name="lname"><br>
-  Last name:   <input type="text" name="lname"><br>
-  Input four:   <input type="text" name="lname"><br>
-  Input five:   <input type="text" name="lname"><br>
-  Input six:    <input type="file" name="pic" id="pic"><br>
+  Font:  <input type="text" name="font"><br>
+  Size:   <input type="text" name="size"><br>
+  
+
+  pic  :  <input type="file" name="pic" id="pic"><br>
+  csv file : <input type="file" name="csv_file" id="csv_file">
   <input type="submit" value="Submit">
 </form>
 

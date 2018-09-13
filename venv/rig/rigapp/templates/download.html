@@ -8,7 +8,6 @@
 	<b> HI! This is the download page for your badge</b>
 <br><br>
 {% load static %}
-<img src="{% static "qr.png" %}" alt="My Badge" height=500 width=500/>
 <form action="download" method="post" >
 {% csrf_token %}
 <input type = "submit" value="download as pdf">
