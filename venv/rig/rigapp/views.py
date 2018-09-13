@@ -7,8 +7,12 @@ import subprocess
 import os
 import sys
 from .models import Badge
-path=os.path.abspath(r"F:\New folder\codezoned\rig\venv\rig\rigapp\id.py")
-fpath=os.path.abspath(r"F:\New folder\codezoned\rig\venv\rig\rigapp\Badge.pdf")
+cwd = os.getcwd()
+path=cwd+"\\rigapp\id.py"
+#path=os.path.abspath(r"F:\New folder\mine\rig\venv\rig\rigapp\id.py")
+#fpath=os.path.abspath(r"F:\New folder\mine\rig\venv\rig\rigapp\Badge.pdf")
+fpath=cwd+"\\rigapp\Badge.pdf"
+cwd=cwd+"\\rigapp"
 from django.core.files.storage import FileSystemStorage
 
 def index(request):
@@ -24,14 +28,18 @@ def index(request):
 
 
 def submit(request):
-    a=request.POST['fname']
-    b=request.POST['lname']
-    folder=os.path.abspath(r"F:\New folder\codezoned\rig\venv\rig\rigapp")
+    a=request.POST['font']
+    b=request.POST['size']
+    folder=cwd
     if(request.FILES):
         myf = request.FILES['pic']
         fs = FileSystemStorage(location=folder)
-        filename = fs.save('img.png', myf)
-    subprocess.call([sys.executable,path, a,b], cwd=r"F:\New folder\codezoned\rig\venv\rig\rigapp")
+        filename = fs.save('upload.png', myf)
+        myf2=request.FILES['csv_file']
+        fs = FileSystemStorage(location=folder)
+        filename = fs.save('data.csv', myf2)
+
+    subprocess.call([sys.executable,path, a,b], cwd=cwd)
     return render(request,'download.html')
 
 
@@ -42,7 +50,3 @@ def down(request):
            response['content_type'] = 'application/pdf'
            response['Content-Disposition'] = 'attachment;filename=Badge.pdf'
            return response
-
-
-
-
