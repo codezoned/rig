@@ -44,8 +44,6 @@ This project is heavily inspired from FOSSASIA's [Badgeyay](https://github.com/f
 
 - Open the webpage in your browser ,fill in your details and your file should automatically download as Badge.pdf
 
-
-
 ## Maintainers
 
 We're always looking out for people who're enthusiastic to work and collaborate with people. If you want to become a maintainer at RIG - Randomised ID Generator you can contact us support@codezoned.com
@@ -55,8 +53,6 @@ We're always looking out for people who're enthusiastic to work and collaborate 
 - [Senthil Kumar (Rats12)](https://github.com/Rats12)
 
 - [Rahul Krishnan](https://github.com/rahulkrishnan221)
-
-## Contributions
 
 ## Contributions
 
