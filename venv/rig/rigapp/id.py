@@ -20,9 +20,11 @@ import sys
 from fpdf import FPDF
 import time
 
-user_font=sys.argv[1]+".ttf"
+user_font=sys.argv[1].split()
+user_font=user_font[0]+'.ttf'
 user_size=int(sys.argv[2])
-
+print(user_font)
+print(user_size)
 
 
 
@@ -52,13 +54,15 @@ def PlaceText():
     draw = ImageDraw.Draw(img)
     fonts_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'fonts')
     print(name)
-    font = ImageFont.truetype(user_font, user_size)
+    font = ImageFont.truetype(user_font,user_size)
 
     w, h = draw.textsize(name,font=font)
     #print((W-w)/2)
     offset=130
-    draw.text(((W-w)/2,(H-h)/2-offset), name,  font=font, fill="white")
-    draw.text(((W-w)/2,(H-h)/2-offset+100), tname,  font=font, fill="white")
+    draw.text(((W-w)/2-30,(H-h)/2-offset), name,  font=font, fill="white")
+    w, h = draw.textsize(name,font=font)
+
+    draw.text(((W-w)/2-30,(H-h)/2), tname,  font=font, fill="white")
 
 
     img.save(picname)
@@ -82,15 +86,16 @@ pdf=FPDF()
 
 def four():
     global i
+    global picname
     print (i)
     while(i<badge.index.size):
         pdf.add_page()
-        picname=str(k)+'.png'
+        picname=str(i)+'.png'
         PlaceText()
         #qrgen()
         image=picname
         pdf.image(image,x=10,y=10,w=90,h=120)
-        i+=1
+        i=i+1
         if(i==badge.index.size):
             break
 
@@ -98,10 +103,9 @@ def four():
 
 
         picname=str(i)+'.png'
-        print("1 over")
+        #print("1 over")
 
 
-        picname=str(k)+'.png'
         PlaceText()
         #qrgen()
         image=picname
@@ -119,7 +123,6 @@ def four():
 
 
 
-        picname=str(k)+'.png'
         PlaceText()
         #qrgen()
         image=picname
@@ -136,7 +139,6 @@ def four():
 
 
 
-        picname=str(k)+'.png'
         PlaceText()
         #qrgen()
         image=picname
@@ -174,3 +176,7 @@ print("--- %s seconds ---" % (time.time() - start_time))
 pdf.output('Badge.pdf')
 os.remove("data.csv")
 os.remove("upload.png")
+
+for k in range(i):
+    name=str(k)+'.png'
+    os.remove(name)
