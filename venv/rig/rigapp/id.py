@@ -61,8 +61,9 @@ def PlaceText():
     offset=130
     draw.text(((W-w)/2,(H-h)/2-offset), name,  font=font, fill="white")
     w, h = draw.textsize(tname,font=font)
-
     draw.text(((W-w)/2,(H-h)/2), tname,  font=font, fill="white")
+
+   
 
 
     img.save(picname)
