@@ -39,12 +39,11 @@ def submit(request):
         fs = FileSystemStorage(location=folder)
         filename = fs.save('data.csv', myf2)
 
-    subprocess.call([sys.executable,path, a,b], cwd=cwd)
+    subprocess.call([sys.executable,path,a,b], cwd=cwd)
     return render(request,'download.html')
 
 
 def down(request):
-    print("does this work")
     with open(fpath, 'rb') as pdf:
            response = HttpResponse(pdf.read())
            response['content_type'] = 'application/pdf'
