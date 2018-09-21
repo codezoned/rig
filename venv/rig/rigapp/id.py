@@ -59,10 +59,10 @@ def PlaceText():
     w, h = draw.textsize(name,font=font)
     #print((W-w)/2)
     offset=130
-    draw.text(((W-w)/2-30,(H-h)/2-offset), name,  font=font, fill="white")
-    w, h = draw.textsize(name,font=font)
+    draw.text(((W-w)/2,(H-h)/2-offset), name,  font=font, fill="white")
+    w, h = draw.textsize(tname,font=font)
 
-    draw.text(((W-w)/2-30,(H-h)/2), tname,  font=font, fill="white")
+    draw.text(((W-w)/2,(H-h)/2), tname,  font=font, fill="white")
 
 
     img.save(picname)
@@ -177,6 +177,6 @@ pdf.output('Badge.pdf')
 os.remove("data.csv")
 os.remove("upload.png")
 
-for k in range(i):
-    name=str(k)+'.png'
-    os.remove(name)
+#for k in range(i):
+    #name=str(k)+'.png'
+    #os.remove(name)
