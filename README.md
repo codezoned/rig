@@ -44,6 +44,24 @@ This project is heavily inspired from FOSSASIA's [Badgeyay](https://github.com/f
 
 - Open the webpage in your browser ,fill in your details and your file should automatically download as Badge.pdf
 
+
+
+## Example:
+
+- Create your csv file 
+
+  ![Alt Text](https://media.giphy.com/media/5sYi2gFATCxceMFGzK/giphy.gif)
+
+- With the surver running , open the webpage and fill in your details and your badge should be ready to download.
+
+  ![Alt Text](https://media.giphy.com/media/X6uNvhqiluOT5baBK6/giphy.gif)
+
+- Your badge is now ready in a pdf file for easy printing!
+
+  ![Alt Text](https://media.giphy.com/media/248fpVeWEkmdexI07o/giphy.gif)
+  
+  
+  
 ## Maintainers
 
 We're always looking out for people who're enthusiastic to work and collaborate with people. If you want to become a maintainer at RIG - Randomised ID Generator you can contact us support@codezoned.com
