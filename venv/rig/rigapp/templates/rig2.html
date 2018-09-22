@@ -7,6 +7,9 @@
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
  body{
 
@@ -17,29 +20,6 @@
 
 
 
-<!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-black w3-card">
-    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
-    <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT</a>
-    <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">NEWS</a>
-    <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CLIENTS</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
-    <div class="w3-dropdown-hover w3-hide-small">
-      <button class="w3-padding-large w3-button" title="More">CHANGE BG <i class="fa fa-caret-down"></i></button>
-      <div class="w3-dropdown-content w3-bar-block w3-card-4">
-        <a href="#" class="w3-bar-item w3-button">BACKGROUND1</a>
-        <a href="#" class="w3-bar-item w3-button">BACKGROUND2</a>
-        <a href="#" class="w3-bar-item w3-button">BACKGROUND3</a>
-        </div>
-    </div>
-    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
-  </div>
-</div>
-
-
-
 <!-- Main content: to shift it to the right by 250 pixels when the sidebar is visible use (style="margin-left:250px") -->
 <div class="w3-main" style="margin-left:250px">
 
@@ -47,51 +27,34 @@
     <div class="w3-twothird w3-container">
      <form action="submit"  enctype="multipart/form-data" method="post"  >
        {% csrf_token %}
-  Font:  <input type="text" name="font"><br>
-  Size:   <input type="text" name="size"><br>
 
+       <div class="form-group">
+         <label for="font">Font:</label><br>
+         <input type="text" name="font" id="font" class="form-control"><br>
+       </div>
+       <div class="form-group"
+         <label for="size">Size: </label>
+          <input type="text" name="size" class="form-control" id="size"><br>
+       </div>
 
-  pic  :  <input type="file" name="pic" id="pic"><br>
-  csv file : <input type="file" name="csv_file" id="csv_file">
-  <input type="submit" value="Submit">
+  <label for="pic">Background Image: </label>
+  <input type="file" class="form-control-file" name="pic" id="pic"><br>
+  <label for="pic">CSV File: </label>
+  <input type="file" class="form-control-file" name="csv_file" id="csv_file">
+  <br><br>
+  <input type="submit" value="Submit" class="btn btn-primary">
 </form>
-
-
-
-
+<br><br><br>
+<div class="alert alert-dark" role="alert">
+  Thank you for using the alpha version of <a href="https://github.com/codezoned/rig" class="alert-link">RIG - Randomised ID Generator</a>.
+</div>
+</div>
 </div>
 
 
 
-  <!-- Pagination -->
-  <div class="w3-center w3-padding-32">
-    <div class="w3-bar">
-      <a class="w3-button w3-black" href="#">1</a>
-      <a class="w3-button w3-hover-black" href="#">2</a>
-      <a class="w3-button w3-hover-black" href="#">3</a>
-      <a class="w3-button w3-hover-black" href="#">4</a>
-      <a class="w3-button w3-hover-black" href="#">5</a>
-      <a class="w3-button w3-hover-black" href="#">&raquo;</a>
-    </div>
-  </div>
-
-  <!-- END MAIN -->
-</div>
-
-<div>
-  <footer id="myFooter">
-    <div class="w3-container w3-theme-l2 w3-padding-36">
-      <h4>Footer</h4>
-    </div>
-
-    <div class="w3-container w3-theme-l1">
-      <p>Powered by <img href='http://www.codezoned.com/' target="_blank" src="http://www.codezoned.com/assets/img/CZmainSmall.png"></p>
-    </div>
-  </footer>
-</div>
-
-
-
-
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>
