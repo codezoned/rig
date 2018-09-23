@@ -13,7 +13,11 @@
 
 This project is heavily inspired from FOSSASIA's [Badgeyay](https://github.com/fossasia/badgeyay). Check em out :grinning:
 
-## Development(for the brave)
+## Contributers
+
+[![](https://sourcerer.io/fame/ionicc/codezoned/rig/images/0)](https://sourcerer.io/fame/ionicc/codezoned/rig/links/0)[![](https://sourcerer.io/fame/ionicc/codezoned/rig/images/1)](https://sourcerer.io/fame/ionicc/codezoned/rig/links/1)[![](https://sourcerer.io/fame/ionicc/codezoned/rig/images/2)](https://sourcerer.io/fame/ionicc/codezoned/rig/links/2)[![](https://sourcerer.io/fame/ionicc/codezoned/rig/images/3)](https://sourcerer.io/fame/ionicc/codezoned/rig/links/3)[![](https://sourcerer.io/fame/ionicc/codezoned/rig/images/4)](https://sourcerer.io/fame/ionicc/codezoned/rig/links/4)[![](https://sourcerer.io/fame/ionicc/codezoned/rig/images/5)](https://sourcerer.io/fame/ionicc/codezoned/rig/links/5)[![](https://sourcerer.io/fame/ionicc/codezoned/rig/images/6)](https://sourcerer.io/fame/ionicc/codezoned/rig/links/6)[![](https://sourcerer.io/fame/ionicc/codezoned/rig/images/7)](https://sourcerer.io/fame/ionicc/codezoned/rig/links/7)
+
+## Development:
 
 - Navigate to the specified directory and add path for the background image
 
@@ -73,4 +77,6 @@ We're always looking out for people who're enthusiastic to work and collaborate 
 
 ## Contributions
 
-**Contributions** will be opened once the project reaches a less alpha stage :wink:
+This project welcomes contributions and suggestions, we are constructing the contribution guidelines, stay tuned  =).
+
+We use GitHub issues for tracking requests and bugs. 😉
