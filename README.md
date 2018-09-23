@@ -1,6 +1,5 @@
 # RIG - Randomised ID Generator
 
-**VERY VERY VERY ALPHA. STAY AWAY FROM PRODUCTION** :sob:
 
 [![Open Source Helpers](https://www.codetriage.com/codezoned/rig/badges/users.svg)](https://www.codetriage.com/codezoned/rig)
 
