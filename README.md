@@ -54,7 +54,7 @@ This project is heavily inspired from FOSSASIA's [Badgeyay](https://github.com/f
 
 - With the surver running , open the webpage and fill in your details and your badge should be ready to download.
 
-  ![Alt Text](https://media.giphy.com/media/X6uNvhqiluOT5baBK6/giphy.gif)
+  ![Alt Text](https://media.giphy.com/media/MTvo1FWJW2VCGqOQAZ/giphy.gif)
 
 - Your badge is now ready in a pdf file for easy printing!
 
