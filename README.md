@@ -48,6 +48,16 @@ This project is heavily inspired from FOSSASIA's [Badgeyay](https://github.com/f
 - Open the webpage in your browser ,fill in your details and your file should automatically download as Badge.pdf
 
 
+## Dependencies
+These are some of the required packages and dependencies for RIG
+- Django
+
+- Pandas
+
+- QRCode
+
+- FPDF
+
 
 ## Example:
 
